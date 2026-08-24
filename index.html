@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Names Array</title>
+</head>
+
+<body>
+
+    <h1>JavaScript Names Array</h1>
+
+    <p>Open the browser console to see the results.</p>
+
+    <script>
+
+        let names = ["John", "Jane", "Doe", "Alice", "Bob"];
+
+        names.forEach(function(name) {
+            console.log(name);
+        });
+
+        names.push("Eve");
+
+        names.splice(names.indexOf("Doe"), 1);
+
+        names.sort();
+
+        console.log("Sorted names:", names.join(", "));
+
+        if (names.includes("Alice")) {
+            console.log("Alice is present");
+        } else {
+            console.log("Alice is not present");
+        }
+
+        let uppercaseNames = names.map(function(name) {
+            return name.toUpperCase();
+        });
+
+        console.log("Uppercase names:", uppercaseNames.join(", "));
+
+    </script>
+
+</body>
+</html>
